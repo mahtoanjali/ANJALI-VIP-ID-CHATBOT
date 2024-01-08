@@ -17,8 +17,8 @@ import re
 
 API_ID = "26718236"
 API_HASH = "637934a34b33c3b6912f02532de95f09"
-SESSION_NAME = os.environ.get("SESSION_NAME", "")
-MONGO_URL = os.environ.get("MONGO_URL", "")
+SESSION_NAME = os.environ.get("SESSION_NAME", "AQBjzI04EakJirJfSjTKain349u5aTvOyGt7KvhfzF83PFAO4YEJUnZYdQ3iMZB7fg6a_nRegh955YQ-5J8Iql6x6USvH0VEL_LmEBHJrd7SP0GMG17rMrUoP3UZld72oAj6uWY7RNYuc6GC5Xgm0hmXBbOD3WXLpKi1uG_zwkHKuTNfnw92Zmzqyy0dqeP0DGfvY_u9E-pQnDPvlAMDp8k03mQtTc0S5ugEtuKzMCr_DTghT3Fgjv2eXGOWyyMEfjSM3JawFa3KxwX61W6MuWbPlQQqvS3J3lFrcTV5j8zAbQGq253ZtZ2br0z1gJgXjbi3M88mB7DnqajeCbqycLBEAAAAAVsQvEcA")
+MONGO_URL = os.environ.get("MONGO_URL", "mongodb+srv://Bikash:Bikash@bikash.yl2nhcy.mongodb.net/?retryWrites=true&w=majority")
 
 
 client = Client(SESSION_NAME, API_ID, API_HASH)
@@ -31,7 +31,7 @@ client = Client(SESSION_NAME, API_ID, API_HASH)
     filters.command("alive", prefixes=["/", ".", "?", "-"])
     & ~filters.private)
 async def start(client, message):
-    await message.reply_text(f"**ᴀʟᴇxᴀ ᴀɪ ᴜsᴇʀʙᴏᴛ ғᴏʀ ᴄʜᴀᴛᴛɪɴɢ ɪs ᴡᴏʀᴋɪɴɢ**")
+    await message.reply_text(f"**ᴀɴᴊᴀʟɪ ᴀɪ ᴜsᴇʀʙᴏᴛ ғᴏʀ ᴄʜᴀᴛᴛɪɴɢ ɪs ᴡᴏʀᴋɪɴɢ**")
     
     
 @client.on_message(
